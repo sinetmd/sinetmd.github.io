@@ -59,6 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   window.addEventListener("load", navbarlinksActive);
   document.addEventListener("scroll", navbarlinksActive);
+  
   /**
    * Mobile nav toggle
    */
@@ -130,6 +131,8 @@ document.addEventListener("DOMContentLoaded", () => {
         ? scrollTop.classList.add("active")
         : scrollTop.classList.remove("active");
     };
+
+    
     window.addEventListener("load", togglescrollTop);
     document.addEventListener("scroll", togglescrollTop);
     scrollTop.addEventListener(
