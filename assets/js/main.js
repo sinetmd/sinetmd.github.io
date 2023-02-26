@@ -140,7 +140,6 @@ document.addEventListener("DOMContentLoaded", () => {
       })
     );
   }
-
   /**
    * Porfolio isotope and filter
    */
@@ -214,16 +213,6 @@ document.addEventListener("DOMContentLoaded", () => {
     aos_init();
   });
 
-  // remove hash from url
-  // function removeHash() {
-  //   var url = window.location.href;
-  //   var index = url.indexOf("#"); // get #
-  //   if (index !== -1) {
-  //     var newUrl = url.substring(0, index);
-  //     window.history.replaceState(null, null, newUrl);
-  //   }
-  // }
-
   document.addEventListener("DOMContentLoaded", function () {
     // Get all anchor elements
     var links = document.getElementsByTagName("a");
@@ -237,6 +226,17 @@ document.addEventListener("DOMContentLoaded", () => {
         // Remove the hash from the href attribute
         link.setAttribute("href", link.getAttribute("href").replace("#", ""));
       }
+    }
+  });
+
+  // Remove hero from URL when the Acasa link is clicked
+  const homeLink = document.querySelector("navbar a");
+  homeLink.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    if (location.href === "hero") {
+      // Replace the URL with the homepage URL
+      history.replaceState(null, null, window.location.origin);
     }
   });
 });

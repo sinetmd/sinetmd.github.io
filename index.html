@@ -47,26 +47,23 @@
         class="container d-flex justify-content-center justify-content-md-between"
       >
         <div class="contact-info d-flex align-items-center">
-          <i class="bi bi-envelope d-flex align-items-center"
-            ><a href="mailto:contact@instalatii-arges.ro"
+          <i class="bi bi-envelope d-flex align-items-center">
+            <a href="mailto:contact@instalatii-arges.ro"
               >contact@instalatii-arges.ro</a
-            ></i
-          >
+            >
+          </i>
           <i class="bi bi-phone d-flex align-items-center ms-4"
             ><span>0730 36 50 60</span></i
           >
-
-          <i class="bi bi-geo-alt d-flex align-items-center ms-4">
+          <i class="bi bi-geo-alt d-none d-md-flex align-items-center ms-4">
             <a href="#contact">
               <span>Str. Victoriei Bl. C3, Parter</span>
             </a>
           </i>
         </div>
-        <!-- <div class="social-links d-none d-md-flex align-items-center">
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-      </div> -->
       </div>
     </section>
+
     <!-- End Top Bar -->
 
     <header id="header" class="header d-flex align-items-center">
@@ -81,7 +78,7 @@
           <ul>
             <li><a href="#hero">Acasa</a></li>
             <li><a href="#servicii">Servicii</a></li>
-            <li><a href="#portfolio">Portfoliu</a></li>
+            <li><a href="#portofoliu">Portfoliu</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
@@ -108,11 +105,13 @@
               aveți întrebări sau nevoie de ajutor, nu ezitați să ne contactați.
               Vă mulțumim pentru vizită!
             </p>
-            <div class="d-flex justify-content-center justify-content-lg-start">
+            <div
+              class="d-flex justify-content-center justify-content-lg-start mb-3 mt-md-0"
+            >
               <a href="#servicii" class="btn-get-started">Servicii</a>
             </div>
           </div>
-          <div class="col-lg-6 order-1 order-lg-2">
+          <div class="col-lg-6 order-1 order-lg-2 mb-3">
             <img
               src="https://cdn.pixabay.com/photo/2013/07/13/10/12/human-156741_960_720.png"
               class="img-fluid"
@@ -153,7 +152,7 @@
                   Oferim servicii de instalare si proiectare pentru urmatoarele
                   tipuri de centrale:
                 </h6>
-                <ul class="service-list">
+                <ul>
                   <li class="check">Centrale Termice</li>
                   <li class="check">
                     Centrale pe combustibil solid (lemn,carbuni)
@@ -173,7 +172,7 @@
                 <h6>
                   Oferim servicii de instalare si proiectare pentru urmatoarele:
                 </h6>
-                <ul class="ser">
+                <ul>
                   <li>Circuite de apa (bai, bucatarii, etc.)</li>
                   <li>Instalatii de protectie</li>
                   <li>Impamantare si paratrasnet</li>
@@ -204,13 +203,15 @@
       <!-- End Our servicii Section -->
 
       <!-- ======= Portfolio Section ======= -->
-      <section id="portfolio" class="portfolio sections-bg">
+      <section id="portofoliu" class="portfolio sections-bg">
         <div class="container" data-aos="fade-up">
           <div class="section-header">
-            <h2>Portfolio</h2>
+            <h2>Portofoliu</h2>
             <p>
-              Quam sed id excepturi ccusantium dolorem ut quis dolores nisi llum
-              nostrum enim velit qui ut et autem uia reprehenderit sunt deleniti
+              Oferim servicii de instalatii electrice si sanitare de calitate
+              superioara, realizate cu profesionalism si atentie la detalii.
+              Descopera portofoliul nostru pentru a vedea exemple concrete de
+              proiecte finalizate cu succes.
             </p>
           </div>
 
@@ -221,65 +222,102 @@
             data-portfolio-sort="original-order"
             data-aos="fade-up"
             data-aos-delay="100"
-          >
-            <!-- <div>
-            <ul class="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-product">Product</li>
-              <li data-filter=".filter-branding">Branding</li>
-              <li data-filter=".filter-books">Books</li>
-            </ul><!-- End Portfolio Filters -->
-          </div>
-          -->
+          ></div>
 
           <div class="row gy-4 portfolio-container">
-            <div class="col-xl-4 col-md-6 portfolio-item filter-app">
+            <div class="col-lg-2 col-md-4 col-sm-6 portfolio-item filter-app">
               <div class="portfolio-wrap">
                 <a
-                  href="assets/img/portfolio/app-1.jpg"
+                  href="assets/img/portfolio/1.jpg"
                   data-gallery="portfolio-gallery-app"
                   class="glightbox"
-                  ><img
-                    src="assets/img/portfolio/app-1.jpg"
+                >
+                  <img
+                    src="assets/img/portfolio/1.jpg"
                     class="img-fluid"
                     alt=""
-                /></a>
-                <div class="portfolio-info">
-                  <h4>
-                    <a href="portfolio-details.html" title="More Details"
-                      >App 1</a
-                    >
-                  </h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                </div>
+                  />
+                </a>
               </div>
             </div>
-            <!-- End Portfolio Item -->
-
-            <div class="col-xl-4 col-md-6 portfolio-item filter-books">
+            <div class="col-lg-2 col-md-4 col-sm-6 portfolio-item filter-app">
               <div class="portfolio-wrap">
                 <a
-                  href="assets/img/portfolio/books-3.jpg"
+                  href="assets/img/portfolio/2.jpg"
                   data-gallery="portfolio-gallery-app"
                   class="glightbox"
-                  ><img
-                    src="assets/img/portfolio/books-3.jpg"
+                >
+                  <img
+                    src="assets/img/portfolio/2.jpg"
                     class="img-fluid"
                     alt=""
-                /></a>
-                <div class="portfolio-info">
-                  <h4>
-                    <a href="portfolio-details.html" title="More Details"
-                      >Books 3</a
-                    >
-                  </h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                </div>
+                  />
+                </a>
               </div>
             </div>
-            <!-- End Portfolio Item -->
+            <div class="col-lg-2 col-md-4 col-sm-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <a
+                  href="assets/img/portfolio/2-2.jpg"
+                  data-gallery="portfolio-gallery-app"
+                  class="glightbox"
+                >
+                  <img
+                    src="assets/img/portfolio/2-2.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <a
+                  href="assets/img/portfolio/2-3.jpg"
+                  data-gallery="portfolio-gallery-app"
+                  class="glightbox"
+                >
+                  <img
+                    src="assets/img/portfolio/2-3.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <a
+                  href="assets/img/portfolio/3.jpg"
+                  data-gallery="portfolio-gallery-app"
+                  class="glightbox"
+                >
+                  <img
+                    src="assets/img/portfolio/3.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <a
+                  href="assets/img/portfolio/3-1.jpg"
+                  data-gallery="portfolio-gallery-app"
+                  class="glightbox"
+                >
+                  <img
+                    src="assets/img/portfolio/3-1.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+            <!-- Repeat the above HTML for 4 more images -->
           </div>
+
           <!-- End Portfolio Container -->
         </div>
       </section>
@@ -359,48 +397,30 @@
 
     <!-- ======= Footer =======
     <footer id="footer" class="footer">
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">servicii</a></li>
-              <li><a href="#">Terms of service</a></li>
-              <li><a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Our servicii</h4>
-            <ul>
-              <li><a href="#">Instalatii</a></li>
-              <li><a href="#">Web Development</a></li>
-              <li><a href="#">Product Management</a></li>
-              <li><a href="#">Marketing</a></li>
-              <li><a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
-
-          <div
-            class="col-lg-3 col-md-12 footer-contact text-center text-md-start"
+       <section id="topbar" class="topbar d-flex align-items-center">
+      <div
+        class="container d-flex justify-content-center justify-content-md-between"
+      >
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope d-flex align-items-center">
+            <a href="mailto:contact@instalatii-arges.ro"
+              >contact@instalatii-arges.ro</a
+            >
+          </i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"
+            ><span>0730 36 50 60</span></i
           >
-            <h4>Contacteaza-ne</h4>
-            <p>
-              Str. Victoriei Bl. C3, Parter <br />
-              Costesti, Judet Arges<br />
-              Romania <br /><br />
-              <strong>Telefon:</strong> 0730 36 50 60 <br />
-              <strong>Email:</strong> contact@instalatii-arges.ro<br />
-            </p>
-          </div>
+          <i class="bi bi-geo-alt d-none d-md-flex align-items-center ms-4">
+            <a href="#contact">
+              <span>Str. Victoriei Bl. C3, Parter</span>
+            </a>
+          </i>
         </div>
       </div>
+    </section>
     </footer>
     <!-- End Footer -->
     <!-- End Footer -->
-    -->
     <a
       href="#"
       class="scroll-top d-flex align-items-center justify-content-center"
@@ -417,7 +437,9 @@
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <!-- Template Main JS File -->
+    <script src="assets/js/app.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/remove-hash.js"></script>
+    <script src="assets/js/hash-router.js"></script>
   </body>
 </html>
