@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   window.addEventListener("load", navbarlinksActive);
   document.addEventListener("scroll", navbarlinksActive);
-  
+
   /**
    * Mobile nav toggle
    */
@@ -132,7 +132,6 @@ document.addEventListener("DOMContentLoaded", () => {
         : scrollTop.classList.remove("active");
     };
 
-    
     window.addEventListener("load", togglescrollTop);
     document.addEventListener("scroll", togglescrollTop);
     scrollTop.addEventListener(
@@ -229,17 +228,6 @@ document.addEventListener("DOMContentLoaded", () => {
         // Remove the hash from the href attribute
         link.setAttribute("href", link.getAttribute("href").replace("#", ""));
       }
-    }
-  });
-
-  // Remove hero from URL when the Acasa link is clicked
-  const homeLink = document.querySelector("navbar a");
-  homeLink.addEventListener("click", function (e) {
-    e.preventDefault();
-
-    if (location.href === "hero") {
-      // Replace the URL with the homepage URL
-      history.replaceState(null, null, window.location.origin);
     }
   });
 });
